@@ -4,7 +4,6 @@ SetEnv PHP_VALUE "display_errors = On"
 # Empêcher l'accès direct au fichier config.php
 <Files "config.php">
     Require all denied
-ffff
 </Files>
 
 #Désactiver l'affichage de la liste des fichiers dans les dossiers
