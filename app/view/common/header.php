@@ -14,17 +14,27 @@
 <body>
     <header>
         <ul>
-            <div id="left">
-                <li>Catalogue</li>
-                <li>Vulgarisation</li>
+            <li>
+                <div id="left">
+                    <ul>
+                        <li>Catalogue</li>
+                        <li>Vulgarisation</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div id="center">
+            <li><a href="?route=home"><img id="logo" src="public/images/logo.png" alt="Logo Owl Time"></a></li>
             </div>
-            <div id="center">
-                <li><a href="?route=home"><img id="logo" src="public/images/logo.png" alt="Logo Owl Time"></a></li>
-            </div>
-            <div id="right">
-                <li>Panier</li>
-                <li>Compte</li>
-            </div>
+            </li>
+            <li>
+                <div id="right">
+                    <ul>
+                        <li>Panier</li>
+                        <li>Compte</li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </header>
     <main>
