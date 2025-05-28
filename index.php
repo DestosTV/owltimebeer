@@ -37,4 +37,3 @@ switch ($route) {
         die();
 }
 
-coucou
