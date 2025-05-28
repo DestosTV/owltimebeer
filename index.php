@@ -36,3 +36,5 @@ switch ($route) {
     default:
         die();
 }
+
+coucou
