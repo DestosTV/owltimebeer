@@ -13,28 +13,20 @@
 
 <body>
     <header>
-        <ul>
-            <li>
-                <div id="left">
-                    <ul>
-                        <li>Catalogue</li>
-                        <li>Vulgarisation</li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div id="center">
-            <li><a href="?route=home"><img id="logo" src="public/images/logo.png" alt="Logo Owl Time"></a></li>
-            </div>
-            </li>
-            <li>
-                <div id="right">
-                    <ul>
-                        <li>Panier</li>
-                        <li>Compte</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+        <nav>
+            <ul class="header">
+                <li class="left">
+                    <a href="?route=catalogue">Catalogue</a>
+                    <a href="?route=vulgarisation">Vulgarisation</a>
+                </li>
+                <li class="center">
+                    <a href="?route=home"><img id="logo" src="public/images/logo.png" alt="Logo Owl Time" /></a>
+                </li>
+                <li class="right">
+                    <a href="?route=panier">Panier</a>
+                    <a href="?route=login">Compte</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>

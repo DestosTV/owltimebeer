@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   background: linear-gradient(
     to bottom right,
@@ -12,50 +11,119 @@ body {
   );
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  font-family: "KellySlab", sans-serif;
 }
-
 @font-face {
   font-family: "KellySlab";
   src: url(../fonts/KellySlab.ttf);
 }
-
 header {
   font-family: "KellySlab";
   font-size: 2vw;
   background-color: #fac460;
+}
+nav {
+  position: relative;
+  padding: 1rem 2rem;
+}
+ul.header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul.header > li {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+ul.header > li.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  flex: 0 0 auto;
+}
 
-  img {
-    width: 100%;
-    height: auto;
+ul.header > li.right {
+  justify-content: center;
+}
+
+ul.header > li.right {
+  justify-content: center;
+}
+
+ul.header li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 0.75rem;
+  transition: color 0.3s ease;
+}
+ul.header li a:hover {
+  color: #a34820;
+}
+#logo {
+  max-height: 3vw;
+  width: auto;
+  display: block;
+}
+
+
+footer {
+  font-family: "KellySlab";
+  font-size: 1.5vw;
+  background-color: #fac460;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  #youtube {
+    height: 40px;
   }
 
-  .logo {
-    align-self: center;
+  #instagram {
+    height: 40px;
   }
 
-  ul {
+  #tiktok {
+    height: 40px;
+  }
+
+  a {
+    color: #00ffd0;
+  }
+
+  a:hover {
+    color: #006250;
+  }
+
+  .gauche ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     list-style-type: none;
-    align-items: center;
-    padding: 1rem;
   }
 
-  #left,
-  #right {
+  .gauche {
+    max-width: 30%;
+  }
+
+  .droite {
+    width: 30%;
     display: flex;
-    gap: 1rem;
-    flex: 1;
+    flex-direction: column;
   }
 
-  #logo {
-    height: 100px;
+  .droite ul {
+    margin: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
-  #center {
-    position: absolute !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+  .prevention {
+    font-size: 1vw;
+    padding-top: 15px;
   }
 }
