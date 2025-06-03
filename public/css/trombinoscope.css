@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .trombi {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .trombi h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .member {
+    text-align: center;
+  }
+
+  .photo {
+    width: 120px;
+    height: 160px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .member p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #fff;
+  }
+
+  .member span {
+    font-size: 0.8em;
+    color: #ddd;
+  }

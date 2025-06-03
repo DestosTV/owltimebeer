@@ -33,6 +33,10 @@ switch ($route) {
         require_once 'app/controller/pay.controller.php';
         generatePayPage();
         break;
+    case 'trombi':
+        require_once 'app/controller/trombinoscope.controller.php';
+        generateTrombiPage();
+        break;
     default:
         die();
 }
