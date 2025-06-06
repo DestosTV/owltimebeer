@@ -17,6 +17,10 @@ switch ($route) {
     case 'login':
         require_once 'app/controller/login.controller.php';
         generateLoginPage();
+    case 'vallogin':
+        require "app/controller/login.controller.php";
+        validateLogin();
+        break;
     case 'register':
         require_once 'app/controller/register.controller.php';
         generateRegisterPage();

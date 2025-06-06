@@ -1,6 +1,6 @@
  <div class="login-container">
      <h2>Connexion</h2>
-     <form action="index.php?route=vallogin" method="post" class="login-form">
+     <form action="?route=vallogin" method="post" class="login-form">
         <div>
             <label for="login">Login :</label>
             <input type="text" id="login" name="login" required>
