@@ -13,6 +13,11 @@ body {
   background-size: cover;
   font-family: "KellySlab", sans-serif;
 }
+main {
+  flex: 1;
+  min-height: 86.7vh;
+  padding-top: 150px;
+}
 @font-face {
   font-family: "KellySlab";
   src: url(../fonts/KellySlab.ttf);
@@ -21,10 +26,12 @@ header {
   font-family: "KellySlab";
   font-size: 2.5vw;
   background-color: #fac460;
+  position: fixed;
 }
 nav {
   position: relative;
   padding: 2.5rem 2rem;
+  width: 100vw;
 }
 ul.header {
   list-style: none;
@@ -32,10 +39,15 @@ ul.header {
   justify-content: space-between;
   align-items: center;
 }
-ul.header > li {
+ul.header > li.right {
   flex: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
+}
+ul.header > li.right {
+  flex: 1;
+  display: flex;
+  justify-content: right;
 }
 ul.header > li.center {
   position: absolute;
@@ -69,6 +81,7 @@ footer {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
   #youtube {
     height: 40px;
   }
@@ -118,4 +131,3 @@ footer {
     font-size: 1vw;
     padding-top: 15px;
   }
-}

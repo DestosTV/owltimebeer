@@ -5,11 +5,12 @@
  *
  * @return void
  */
-function generateTrombiPage() {
+function generateTrombinoscopePage()
+{
     $data = [
-        'css' => 'trombi.css',
-        'page_title' => "Trombi - Owl Time",
-        'view' => 'app/view/trombi.view.php',
+        'css' => 'trombinoscope.css',
+        'page_title' => "Trombinoscope - Owl Time",
+        'view' => 'app/view/trombinoscope.view.php',
         'layout' => 'app/view/common/layout.php',
     ];
 

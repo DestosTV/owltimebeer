@@ -22,3 +22,37 @@ function getDatabaseConnexion(): PDO
     }
     return $pdo;
 }
+
+function getAllBeer(): array
+{
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT * FROM beer");
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
+function getBeerById(int $id): array
+{
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT * FROM beer WHERE id=:id");
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetch();
+}
+
+function getAllPerson(): array
+{
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT * FROM trombinoscope");
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
+function getPersonById(int $id): array
+{
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT * FROM trombinoscope WHERE id=:id");
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetch();
+}

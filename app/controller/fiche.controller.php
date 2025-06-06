@@ -5,12 +5,11 @@
  *
  * @return void
  */
-function generateVulgarisationPage()
-{
+function generateFichePage() {
     $data = [
-        'css' => 'vulgarisation.css',
-        'page_title' => "Vulgarisation - Owl Time",
-        'view' => 'app/view/vulgarisation.view.php',
+        'css' => 'fiche.css',
+        'page_title' => "Équipe - Owl Time",
+        'view' => 'app/view/fiche.view.php',
         'layout' => 'app/view/common/layout.php',
     ];
 

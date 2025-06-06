@@ -32,12 +32,19 @@ switch ($route) {
     case 'pay':
         require_once 'app/controller/pay.controller.php';
         generatePayPage();
-        break;
-    case 'trombi':
+    case 'trombinoscope':
         require_once 'app/controller/trombinoscope.controller.php';
-        generateTrombiPage();
+        generateTrombinoscopePage();
+    case 'fiche':
+        require_once 'app/controller/fiche.controller.php';
+        generateFichePage();
+    case 'beer':
+        require_once 'app/controller/beer.controller.php';
+        generateBeerPage();
+    case 'vulgarisation':
+        require_once 'app/controller/vulgarisation.controller.php';
+        generateVulgarisationPage();
         break;
     default:
         die();
 }
-

@@ -1,2 +1,1 @@
-<h1>Hello World!</h1>
-<a href="?route=catalogue">vr</a>
+<h1>un accueil</h1>
