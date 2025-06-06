@@ -82,16 +82,8 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-  #youtube {
-    height: 40px;
-  }
-
-  #instagram {
-    height: 40px;
-  }
-
-  #tiktok {
-    height: 40px;
+  #youtube, #instagram, #tiktok {
+    height: 50px;
   }
 
   a {
@@ -114,9 +106,11 @@ footer {
   }
 
   .droite {
-    width: 30%;
+    width: 15%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
 
   .droite ul {

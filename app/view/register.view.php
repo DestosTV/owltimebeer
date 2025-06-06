@@ -6,7 +6,7 @@
         <?php if (!empty($success_message)) : ?>
             <p class="success-message"><?= htmlspecialchars($success_message) ?></p>
         <?php endif; ?>
-        <form action="index.php?route=valregister" method="post" class="register-form" autocomplete="off">
+        <form action="?route=valregister" method="post" class="register-form" autocomplete="off">
             <div>
                 <label for="username">Nom d'utilisateur :</label>
                 <input type="text" id="username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
@@ -22,10 +22,6 @@
             <div>
                 <label for="email">Adresse e-mail :</label>
                 <input type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
-            </div>
-            <div>
-                <label for="age">Âge :</label>
-                <input type="number" id="age" name="age" min="1" max="120" required value="<?= htmlspecialchars($_POST['age'] ?? '') ?>">
             </div>
             <div>
                 <label for="password">Mot de passe :</label>
