@@ -1,36 +1,34 @@
-<div class="register-container">
-        <h2>Créer un compte</h2>
-        <?php if (!empty($error_message)) : ?>
-            <p class="error-message"><?= htmlspecialchars($error_message) ?></p>
-        <?php endif; ?>
-        <?php if (!empty($success_message)) : ?>
-            <p class="success-message"><?= htmlspecialchars($success_message) ?></p>
-        <?php endif; ?>
+<div class="connexion">
+        <div class="contour">
+        <h3>Créez votre compte !</h3>
         <form action="?route=valregister" method="post" class="register-form" autocomplete="off">
             <div>
+            <div class="entry">
                 <label for="username">Nom d'utilisateur :</label>
-                <input type="text" id="username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
+                <input class="txt" type="text" id="username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
             </div>
-            <div>
+            <div class="entry">
                 <label for="lastname">Nom :</label>
-                <input type="text" id="lastname" name="lastname" required value="<?= htmlspecialchars($_POST['lastname'] ?? '') ?>">
+                <input class="txt" type="text" id="lastname" name="lastname" required value="<?= htmlspecialchars($_POST['lastname'] ?? '') ?>">
             </div>
-            <div>
+            <div class="entry">
                 <label for="firstname">Prénom :</label>
-                <input type="text" id="firstname" name="firstname" required value="<?= htmlspecialchars($_POST['firstname'] ?? '') ?>">
+                <input class="txt" type="text" id="firstname" name="firstname" required value="<?= htmlspecialchars($_POST['firstname'] ?? '') ?>">
             </div>
-            <div>
+            <div class="entry">
                 <label for="email">Adresse e-mail :</label>
-                <input type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+                <input class="txt" type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
             </div>
-            <div>
+            <div class="entry">
                 <label for="password">Mot de passe :</label>
-                <input type="password" id="password" name="password" required>
+                <input class="txt" type="password" id="password" name="password" required>
             </div>
-            <div>
+            <div class="entry">
                 <label for="password_confirm">Confirmer le mot de passe :</label>
-                <input type="password" id="password_confirm" name="password_confirm" required>
+                <input class="txt" type="password" id="password_confirm" name="password_confirm" required>
             </div>
-            <input class="btn-submit" type="submit" value="Créer le compte">
+            </div>
+            <input class="btnConnexion btn-submit" type="submit" value="Créer le compte">
         </form>
+        </div>
     </div>

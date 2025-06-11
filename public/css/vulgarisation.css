@@ -1,0 +1,45 @@
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 30px;
+  font-family: 'Georgia', serif;
+  color: white;
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.about-section h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 12px;
+  background-color: #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
