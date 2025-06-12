@@ -1,52 +1,13 @@
 <h1 class="title">Catalogue</h1>
-
-  <div class="grid">
-    <div class="item">
-      <img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-
-
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-    <div class="item"><img src="heineken.png" alt="Heineken" />
-      <div class="hover-info">
-        Nom de la bière/du produit - Goût
-      </div>
-    </div>
-  </div>
+<div class="grid">
+    <?php foreach ($bieres as $biere): ?>
+        <a href="?route=beer&id=<?= urlencode($biere['id_beer']) ?>" style="text-decoration:none;color:inherit;">
+            <div class="item">
+                <img src="<?= htmlspecialchars($biere['photo']) ?>" alt="<?= htmlspecialchars($biere['name']) ?>" />
+                <div class="hover-info">
+                    <?= htmlspecialchars($biere['name']) ?> - <?= htmlspecialchars($biere['categorie']) ?>
+                </div>
+            </div>
+        </a>
+    <?php endforeach; ?>
+</div>

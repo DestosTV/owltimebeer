@@ -34,7 +34,7 @@ function getAllBeer(): array
 function getBeerById(int $id): array
 {
     $db = getDatabaseConnexion();
-    $stmt = $db->prepare("SELECT * FROM beer WHERE id=:id");
+    $stmt = $db->prepare("SELECT * FROM beer WHERE id_beer=:id");
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
     return $stmt->fetch();
@@ -51,8 +51,7 @@ function getAllPerson(): array
 function getPersonById(int $id): array
 {
     $db = getDatabaseConnexion();
-    $stmt = $db->prepare("SELECT * FROM trombinoscope WHERE id=:id");
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-    $stmt->execute();
-    return $stmt->fetch();
+    $stmt = $db->prepare("SELECT * FROM trombinoscope WHERE id_trombi = :id");
+    $stmt->execute(['id' => $id]);
+    return $stmt->fetch() ?: [];
 }

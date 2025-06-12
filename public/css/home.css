@@ -4,8 +4,8 @@
     text-align: center;
 }
 .contenuZone{
-    height: 50vw;
-    gap: 20px;
+    height: fit-content;
+    width: 100%;
     background-color:#3e0707a8;
     padding: 2%;
     display: flex;
@@ -19,14 +19,6 @@
 }
 
 img{
-
     max-height: 100%;
 }
 
-
-.pubVideo{
-    width:100%;
-    height: 100%;
-
-
-}

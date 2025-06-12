@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Jura;
+    font-style: normal;
+    src: url(../fonts/Jura.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: IslandMoment;
+    font-style: normal;
+    src: url(../fonts/IslandMoment.ttf) format('truetype');
+}
+
+
+h1 {
+    text-align: center;
+    font-family: Jura;
+    font-size: 5rem;
+}
+
+.photo {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.name {
+    text-align: center;
+    font-family: IslandMoment;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.role {
+    text-align: center;
+    font-family: Jura;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+.description {
+    text-align: center;
+    font-family: Jura;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

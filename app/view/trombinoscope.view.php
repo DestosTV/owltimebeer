@@ -1,29 +1,22 @@
-  <section class="trombinoscope">
-      <h2>Notre Équipe</h2>
-      <div class="team-grid">
-          <div class="member">
-              <div class="photo"></div>
-              <p>Lina Pequignot<br><span>Community manager</span></p>
-          </div>
-          <div class="member">
-              <div class="photo"></div>
-              <p>Morgan Duchamp<br><span>Chef de projet</span></p>
-          </div>
-          <div class="member">
-              <div class="photo"></div>
-              <p>Ambrine Rebay<br><span>Ux designer</span></p>
-          </div>
-          <div class="member">
-              <div class="photo"></div>
-              <p>Amaury Rouille<br><span>Dévellopeur web</span></p>
-          </div>
-          <div class="member">
-              <div class="photo"></div>
-              <p>Matéo Veau<br><span>Dévellopeur web</span></p>
-          </div>
-          <div class="member">
-              <div class="photo"></div>
-              <p>Rayan Berkane<br><span>Assistant communication et marketing</span></p>
-          </div>
-      </div>
-  </section>
+<section class="trombinoscope">
+    <h2>Notre Équipe</h2>
+    <div class="team-grid">
+        <?php foreach ($personnes as $personne): ?>
+            <a href="?route=fiche&id=<?= urlencode($personne['id_trombi']) ?>" style="text-decoration:none;color:inherit;">
+                <div class="member">
+                    <div class="photo">
+                        <?php if (!empty($personne['picture'])): ?>
+                            <img src="<?= htmlspecialchars($personne['picture']) ?>" alt="Photo de <?= htmlspecialchars($personne['name']) ?>">
+                        <?php else: ?>
+                            <img src="public/images/defaut.png" alt="Photo par défaut">
+                        <?php endif; ?>
+                    </div>
+                    <p>
+                        <?= htmlspecialchars($personne['name']) ?><br>
+                        <span><?= htmlspecialchars($personne['role']) ?></span>
+                    </p>
+                </div>
+            </a>
+        <?php endforeach; ?>
+    </div>
+</section>
