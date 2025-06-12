@@ -21,3 +21,19 @@ h1 {
     padding-top: 5rem;
 }
 
+.categorie {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Jura', sans-serif;
+    color: #ffe228;
+    padding-top: 30px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    width: 50%;
+    color: #fbe8cb;
+}
