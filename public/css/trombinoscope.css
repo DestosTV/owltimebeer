@@ -5,6 +5,7 @@
 
   .trombinoscope h2 {
     font-family: 'Island Moments', serif;
+    font-weight: inherit;
     font-size: 5em;
     margin-bottom: 40px;
     color: antiquewhite;

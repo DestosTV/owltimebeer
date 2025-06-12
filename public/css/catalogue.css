@@ -6,8 +6,12 @@ main {
 }
 
 .title {
-  font-size: 36px;
-  margin: 40px 0 20px;
+    font-family: 'Island Moments', serif;
+    font-size: 5em;
+    margin-bottom: 40px;
+    color: antiquewhite;
+    font-weight: inherit;
+    text-align: center;
 }
 
 h1 {
