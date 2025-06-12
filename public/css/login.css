@@ -34,6 +34,7 @@ h1{
     color:antiquewhite;
     padding: 10px;
     margin-bottom: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3)
 }
 
 .contour{
@@ -84,9 +85,15 @@ label{
     font-family: KellySlab;
     font-size: 30px;
     background-color: #14c170bd;
+    transition: background-color 0.3s;
     border-radius: 8px;
     padding: 20px;
     margin:20px;
+}
+
+.validation:hover{
+    background-color: #106c41e1;
+
 }
 
 .liens {
