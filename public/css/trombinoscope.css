@@ -31,6 +31,10 @@
     height: 120px;
     background-color: #ccc;
     border-radius: 4px;
+  
+    width: 15rem;
+    height: 300px;
+    border-radius: 16px;
     margin-bottom: 10px;
     overflow: hidden;
     display: flex;
