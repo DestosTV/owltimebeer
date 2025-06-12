@@ -10,7 +10,7 @@ function generateindexPage() {
         'css' => 'index.css',
         'page_title' => "Vérification d'âge - Owl Time",
         'view' => 'app/view/index.view.php',
-        'layout' => 'app/view/common/layout.php',
+        'layout' => 'app/view/common/layout_age.php',
     ];
 
     generatePage($data);
