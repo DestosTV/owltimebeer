@@ -5,8 +5,13 @@ main {
   justify-content: flex-start;
 }
 
+@font-face {
+  font-family: 'Island Moments';
+  src: url('../fonts/IslandMoments.ttf') format('truetype');
+}
+
 .title {
-    font-family: 'Island Moments', serif;
+    font-family: 'Island Moments';
     font-size: 5em;
     margin-bottom: 40px;
     color: antiquewhite;
